@@ -29,8 +29,8 @@ public class Test
 	    public void sendEmail() throws Exception
 	    {
 	          System.out.println("=============mail===========");
-			final String username = "svchaturvedi9@gmail.com";
-			final String password = "Mohini99";
+			final String username = "shashaankchat@gmail.com";
+			final String password = "Mohini24";
 
 			Properties props = new Properties();
 			props.put("mail.smtp.auth", "true");

@@ -11,11 +11,6 @@ import javax.servlet.http.HttpSession;
 
 
 
-
-
-
-
-
 @WebServlet({"/ShippingDetails"})
 public class ShippingDetails
   extends HttpServlet

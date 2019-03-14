@@ -58,19 +58,26 @@ public class RegistrationServlet extends HttpServlet
 
     if (ud.getConfirm_password().equals(ud.getPassword())) {
       
-    	System.out.println("Sending email");
+    	
     	writeData();
+    	
+    	System.out.println("writeData() method completed");
+    	
     	Test t=new Test(ud.getEmail(), "Live In Bliss", "Welcome to Live In Bliss!!! We are happy that you have become a member of Live In Bliss. You will get customized offers from us during festive seasons. So get ready for some exciting deals only from Live In Bliss-Aromatize your Atmosphere");
+    	
+    	System.out.println("Sending email to:- "+ud.getEmail());
+    	
     	try 
         {
             t.sendEmail();
+            System.out.println("Mail Sent successfully");
         } 
     	
         catch (Exception ex) 
         {
             out.println(ex.getMessage());
         }
-    	System.out.println("Email Sent");
+    	
 
      
       HttpSession session = request.getSession();

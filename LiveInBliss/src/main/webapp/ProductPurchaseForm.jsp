@@ -33,12 +33,12 @@
 
                                           <div class="col-xs-6 col-sm-6 col-md-6">
                                     <div class="form-group">
-                            <input type="text" name="first_name" id="e_id" class="form-control input-sm" placeholder="Email id">
+                            <input type="text" name="e_id" id="e_id" class="form-control input-sm" placeholder="Email id">
                                     </div>
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="mob" id="last_name" class="form-control input-sm" placeholder="Mobile no">
+                                        <input type="text" name="mob" id="mob" class="form-control input-sm" placeholder="Mobile no">
                                     </div>
                                 </div>
 
@@ -49,23 +49,23 @@
                                 
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
-                                            <input type="text" name="quantity" placeholder="Quantity required">                                                                                    </div>
+                                            <input type="text" name="quantity" id="quantity" placeholder="Quantity required">                                                                                    </div>
                                 </div>
                                 
 
                                           <div class="col-xs-12 col-sm-4 col-md-4">
                                     <div class="form-group">
-                            <input type="text" name="conty" id="first_name" class="form-control input-sm" placeholder="country">
+                            <input type="text" name="conty" id="county" class="form-control input-sm" placeholder="country">
                                     </div>
                                 </div>
                                    <div class="col-xs-12 col-sm-4 col-md-4">
                                     <div class="form-group">
-                            <input type="text" name="city" id="first_name" class="form-control input-sm" placeholder="city">
+                            <input type="text" name="city" id="city" class="form-control input-sm" placeholder="city">
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4">
                                     <div class="form-group">
-                                        <input type="text" name="pnc" id="last_name" class="form-control input-sm" placeholder="pincode">
+                                        <input type="text" name="pnc" id="pnc" class="form-control input-sm" placeholder="pincode">
                                     </div>
                                 </div>
                                                <input class="coupon_question" type="checkbox" name="coupon_question" value="1">

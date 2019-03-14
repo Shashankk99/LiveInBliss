@@ -23,7 +23,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/shashankk/Downloads/mysql-connector-java-5.1.47 2/mysql-connector-java-5.1.47.jar"/>
 	<classpathentry kind="lib" path="/Users/shashankk/Downloads/javamail-1.4.5/mail.jar"/>
 	<classpathentry kind="lib" path="/Users/shashankk/Downloads/jaf-1.1.1/activation.jar"/>
 	<classpathentry kind="lib" path="/Users/shashankk/Downloads/mysql-socket-factory-1.0.11.jar"/>
@@ -43,6 +42,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/shashankk/Downloads/mysql-connector-java-8.0.13.jar"/>
+	<classpathentry kind="lib" path="/Users/shashankk/Downloads/mysql-connector-java-8.0.15/mysql-connector-java-8.0.15.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
