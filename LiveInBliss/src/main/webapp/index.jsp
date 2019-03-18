@@ -1,893 +1,494 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        
-        <title>Live In Bliss - Home</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <style>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-            html, body {
-                max-width: 100%;
-                overflow-x: hidden;
-            }
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
 
-           
-           
-           
-           
-           .parallax1 {
-                background-image: url("Images/Floral Rose 2.jpg");
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
 
+.w3-bar .w3-button {
+  padding: 16px;
+}
 
-                /* Set a specific height */
-                min-height: 500px;
-
-                /* Create the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .parallax2 {
-                /* The image used */
-                background-image: url("Images/Floral Strawberry 2.jpg");
-
-
-                /* Set a specific height */
-                min-height: 500px;
-
-                /* Create the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .parallax3 {
-                /* The image used */
-                background-image: url("Images/Floral Purp 2.jpg");
-
-
-                /* Set a specific height */
-                min-height: 500px;
-
-                /* Create the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .parallax4 {
-                /* The image used */
-                background-image: url("Images/Floral Vanilla 2.jpg");
-
-
-                /* Set a specific height */
-                min-height: 500px;        
-
-                /* Create the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .parallax5 {
-                /* The image used */
-                
-                
-                background-image: url("Images/GlassCandle.jpg");
-
-                /* Set a specific height */
-                min-height: 500px;
-
-                /* Create the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .parallax6 {
-                /* The image used */
-                background-image: url("Images/Img 1.jpg");
-
-
-                /* Set a specific height */
-                min-height: 500px;        
-
-                /* Create the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .parallax7 {
-                /* The image used */
-                background-image: url("Images/Img 2.jpg");
-
-
-                /* Set a specific height */
-                min-height: 500px;        
-
-                /* Create the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .parallax8 {
-                /* The image used */
-                background-image: url("Images/28468736_1712919742087458_5246398267984134418_n.jpg");
-
-
-                /* Set a specific height */
-                min-height: 500px;        
-
-                /* Create the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .parallax9 {
-                /* The image used */
-                background-image: url("Images/Lavender.png");
-
-
-                /* Set a specific height */
-                min-height: 500px;        
-
-                /* Create the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            
-           
-
-            body {
-                font: 400 15px Lato, sans-serif;
-                line-height: 1.8;
-                color: #818181;
-            }
-            h2 {
-                text-align: center;
-                font-size: 24px;
-                text-transform: uppercase;
-                color: #303030;
-                font-weight: 600;
-                margin-bottom: 30px;
-            }
-            h4 {
-                font-size: 19px;
-                line-height: 1.375em;
-                color: #303030;
-                font-weight: 400;
-                margin-bottom: 30px;
-            }  
-            .container-fluid {
-                padding: 60px 50px;
-            }
-            .bg-grey {
-                background-color: #f6f6f6;
-            }
-            .logo-small {
-                color: #f4511e;
-                font-size: 50px;
-            }
-            .logo {
-                color: #f4511e;
-                font-size: 200px;
-            }
-            .thumbnail {
-                padding: 0 0 15px 0;
-                border: none;
-                border-radius: 0;
-            }
-            .thumbnail img {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 10px;
-            }
-            .carousel-control.right, .carousel-control.left {
-                background-image: none;
-                color: #f4511e;
-            }
-            .carousel-indicators li {
-                border-color: #f4511e;
-            }
-            .carousel-indicators li.active {
-                background-color: #f4511e;
-            }
-            .item h4 {
-                font-size: 19px;
-                line-height: 1.375em;
-                font-weight: 400;
-                font-style: italic;
-                margin: 70px 0;
-            }
-            .item span {
-                font-style: normal;
-            }
-            .panel {
-                border: 1px solid #f4511e; 
-                border-radius:0 !important;
-                transition: box-shadow 0.5s;
-            }
-            .panel:hover {
-                box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-            }
-            .panel-footer .btn:hover {
-                border: 1px solid #f4511e;
-                background-color: #fff !important;
-                color: #f4511e;
-            }
-            .panel-heading {
-                color: #fff !important;
-                background-color: #f4511e !important;
-                padding: 25px;
-                border-bottom: 1px solid transparent;
-                border-top-left-radius: 0px;
-                border-top-right-radius: 0px;
-                border-bottom-left-radius: 0px;
-                border-bottom-right-radius: 0px;
-            }
-            .panel-footer {
-                background-color: white !important;
-            }
-            .panel-footer h3 {
-                font-size: 32px;
-            }
-            .panel-footer h4 {
-                color: #aaa;
-                font-size: 14px;
-            }
-            .panel-footer .btn {
-                margin: 15px 0;
-                background-color: #f4511e;
-                color: #fff;
-            }
-            .navbar {
-                margin-bottom: 0;
-                background-color: #1E2343;
-                z-index: 9999;
-                border: 0;
-                font-size: 12px !important;
-                line-height: 1.42857143 !important;
-                letter-spacing: 4px;
-                border-radius: 0;
-                font-family: Montserrat, sans-serif;
-            }
-            .navbar li a, .navbar .navbar-brand {
-                color: #fff !important;
-            }
-            .navbar-nav li a:hover, .navbar-nav li.active a {
-                color: #1E2343 !important;
-                background-color: #fff !important;
-            }
-            .navbar-default .navbar-toggle {
-                border-color: transparent;
-                color: #fff !important;
-            }
-            footer .glyphicon {
-                font-size: 20px;
-                margin-bottom: 20px;
-                color: #506AFF;
-            }
-            .glyphicon{
-                color: #506AFF;
-            }
-            .slideanim {visibility:hidden;}
-            .slide { 
-                animation-name: slide;
-                -webkit-animation-name: slide;
-                animation-duration: 1s;
-                -webkit-animation-duration: 1s;
-                visibility: visible;
-            }
-            @keyframes slide {
-                0% {
-                    opacity: 0;
-                    transform: translateY(70%);
-                } 
-                100% {
-                    opacity: 1;
-                    transform: translateY(0%);
-                }
-            }
-            @-webkit-keyframes slide {
-                0% {
-                    opacity: 0;
-                    -webkit-transform: translateY(70%);
-                } 
-                100% {
-                    opacity: 1;
-                    -webkit-transform: translateY(0%);
-                }
-            }
-            @media screen and (max-width: 768px) {
-                .col-sm-4 {
-                    text-align: center;
-                    margin: 25px 0;
-                }
-                .btn-lg {
-                    width: 100%;
-                    margin-bottom: 35px;
-                }
-            }
-            @media screen and (max-width: 480px) {
-                .logo {
-                    font-size: 150px;
-                }
-            }
-
-            
-            /* Change styles for span and cancel button on extra small screens */
-            @media screen and (max-width: 300px) {
-                span.psw {
-                    display: block;
-                    float: none;
-                }
-                .cancelbtn {
-                    width: 100%;
-                }
-            }
-            
-              video {
+video {
              height: auto;
              vertical-align: middle;
              width: 100%;
 
             }
-
-            .center { 
-                margin: 0 auto; 
-                width: 100%;
-                height: auto;
-            }
-
-            <!-- Card Styling -->
-
-            .card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                max-width: 300px;
-                margin: auto;
-                text-align: center;
-                font-family: arial;
-            }
-
-            .price {
-                color: grey;
-                font-size: 22px;
-            }
-
-            .card button {
-                border: none;
-                outline: 0;
-                padding: 12px;
-                color: white;
-                background-color: #000;
-                text-align: center;
-                cursor: pointer;
-                width: 100%;
-                font-size: 18px;
-            }
-
-            .card button:hover {
-                opacity: 0.7;
-            }
-
-
-
             
-        </style>
-    </head>
-    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+            body, html {
+  height: 100%;
+}
 
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
-                    </button>
-                    <a class="navbar-brand" href="#myPage">LIVE IN BLISS</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#services">SERVICES</a></li>
-                        <li><a href="#portfolio">PRODUCTS</a></li>
-                        <li><a href="ContactUs.jsp">CONTACT US</a></li>
-                        <li><a href="Register.jsp">REGISTER</a></li>
-                        <li><a href="Login.jsp">LOGIN</a></li>
-                       
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <br>
-        
-           <video autoplay muted loop>
+.parallax1 {
+  /* The image used */
+  background-image: url('Images/Floral Purp 2.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url('Images/Floral Rose 2.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url('Images/Floral Vanilla 2.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4 {
+  /* The image used */
+  background-image: url('Images/Floral Strawberry 2.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LIVE IN BLISS</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="Register.jsp" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> REGISTER</a>
+      <a href="Login.jsp" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LOGIN</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-opacity-max" id="home">
+<video autoplay muted loop>
   <source src="Images/Introduction.mp4" type="video/mp4">
   <source src="Images/Introduction.ogg" type="video/ogg">
-  
 </video>
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
 
-
-<br>
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>About Company Page</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
     </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
     </div>
   </div>
 </div>
 
-           
-                <!-- Container (Services Section) -->
-                <div id="services" class="container-fluid text-center">
-                    <h2>SERVICES</h2>
-                    <h4>What we offer</h4>
-                    <br>
-                    <div class="row slideanim">
-                        <div class="col-sm-4">
-                            <span class="glyphicon glyphicon-off logo-small"></span>
-                            <h4>POWER</h4>
-                            <p>The strong and enthralling fragrance of "LIB" products gives you a complete experience of nature at your own place.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <span class="glyphicon glyphicon-heart logo-small"></span>
-                            <h4>LOVE</h4>
-                            <p>We love our Products and our customers too love them. It's your love which drives us to constantly develop more creativity in our products.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <span class="glyphicon glyphicon-lock logo-small"></span>
-                            <h4>SECURE</h4>
-                            <p>We are always concerned about our Customers. So, your details will always be safe and locked in our servers + The payment gateway on this site too makes it easy for you to purchase any product.</p>
-                        </div>
-                   
-                    <br><br>
-                    <div class="row slideanim">
-                        <div class="col-sm-4">
-                            <span class="glyphicon glyphicon-leaf logo-small"></span>
-                            <h4>NATURE CARE</h4>
-                            <p>You care for the nature and so do we. We use dry flowers in some of our products and use natural oil which is safe to use unlike many companies which use chemical ones.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <span class="glyphicon glyphicon-certificate logo-small"></span>
-                            <h4>CERTIFIED</h4>
-                            <p>"LIVE IN BLISS" is a certified company. So you can trust us as we will never ever break your trust.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <span class="glyphicon glyphicon-wrench logo-small"></span>
-                            <h4 style="color:#303030;">SUPPORT</h4>
-                            <p>We are always there for your concerns regarding our Products if any. Whether you want to ask any query or if you are dissatisfied with any of our services, our team is there to address all your concerns irrespective of how small it may be.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <br><br>
-             <h2>Products</h2><br>
-                <center><h4>What we have created</h4></center>
-                
-                <br>
-                <br>
-            
-            <div id="portfolio" class="container-fluid text-center bg-grey">
-            
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know design.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="Images/Img 1.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
 
+
+<div class="parallax1"></div>
+
+<div style="height:230px;background-color:#001332;font-size:36px; color: #ffffff">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+<div class="parallax2"></div>
+
+<div style="height:230px;background-color:#001332;font-size:36px; color: #ffffff">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+<div class="parallax3"></div>
+
+<div style="height:230px;background-color:#001332;font-size:36px; color: #ffffff">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+<div class="parallax4"></div>
+
+
+
+
+
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
-        <div style="width:100%;height:200px;background-color:#1A1A17;font-size:25px; color:white;">
-            <center>Floral Glass Candle</center><br><center>The FLoral Glass Candle is known for it's charismatic look. Its one
-                of our most demanding products when it comes to Candles. Floral Candles comes in a variety of Fragrances like Rose, Vanilla, Strawberry and Lavender </center>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Anja Doe</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
-        
-                 <div class=parallax1>
-                 </div>
-                 
-                 <div class="parallax2">
-
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
-        
-        <div class="parallax3">
-
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Dan Star</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
-        
-        <div class="parallax4">
+      </div>
+    </div>
+  </div>
+</div>
 
-        </div>
-        <div style="width:100%;height:200px;background-color:#1A1A17;font-size:25px; color:white;">
-            <center>Floral Glass Candle</center><br><center>The FLoral Glass Candle is known for it's charismatic look. Its one
-                of our most demanding products when it comes to Candles. Floral Candles comes in a variety of Fragrances like Rose, Vanilla, Strawberry and Lavender </center>
-        </div>
-        <div class="parallax5">
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
 
-        </div>
-                 <div style="width:100%;height:200px;background-color:#1A1A17;font-size:25px; color:white; padding-left:20px; padding-right:20px">
-            <center>Floral Glass Candle</center><br><center>The FLoral Glass Candle is known for it's charismatic look. Its one
-                of our most demanding products when it comes to Candles. Floral Candles comes in a variety of Fragrances like Rose, Vanilla, Strawberry and Lavender </center>
-        </div>
-            <div class="parallax6">
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
 
-        </div> 
-        <div style="width:100%;height:200px;background-color:#1A1A17;font-size:25px; color:white; padding-left:20px; padding-right:20px">
-            <center>Floral Glass Candle</center><br><center>The FLoral Glass Candle is known for it's charismatic look. Its one
-                of our most demanding products when it comes to Candles. Floral Candles comes in a variety of Fragrances like Rose, Vanilla, Strawberry and Lavender </center>
-        </div>
-        <div class="parallax7">
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
 
-        </div>    
-        <div style="height:200px;background-color:#1A1A17;font-size:25px; color:white; padding-left:20px; padding-right:20px">
-            <center>Floral Glass Candle</center><br><center>The FLoral Glass Candle is known for it's charismatic look. Its one
-                of our most demanding products when it comes to Candles. Floral Candles comes in a variety of Fragrances like Rose, Vanilla, Strawberry and Lavender </center>
-        </div>
-        <div class="parallax8">
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>
 
-        </div>    
-        <div style="height:200px;background-color:#1A1A17;font-size:25px; color:white; padding-left:20px; padding-right:20px">
-            <center>Floral Glass Candle</center><br><center>The FLoral Glass Candle is known for it's charismatic look. Its one
-                of our most demanding products when it comes to Candles. Floral Candles comes in a variety of Fragrances like Rose, Vanilla, Strawberry and Lavender </center>
-        </div>
-        <div class="parallax9">
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
 
-        </div>    
-        <div style="height:200px;background-color:#1A1A17;font-size:25px; color:white; padding-left:20px; padding-right:20px">
-            <center>Floral Glass Candle</center><br><center>The FLoral Glass Candle is known for it's charismatic look. Its one
-                of our most demanding products when it comes to Candles. Floral Candles comes in a variety of Fragrances like Rose, Vanilla, Strawberry and Lavender </center>
-        </div>
-        
-                
-                 
-                 
-                 
-                 
-           
-               
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <!-- Dynamic Tabs-->
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>PRICING</h3>
+  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-                <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#home">Floral Candles</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Potpourries</a></li>
-                    <li><a data-toggle="tab" href="#menu2">Reed Diffusers</a></li>
-                    <li><a data-toggle="tab" href="#menu3">Buddha Sets</a></li>
-                </ul>
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Mumbai, India</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 8828155962</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: proprietor@liveinbliss.in</p>
+    <br>
+    <form action="ContactUs" method="post" target="_blank">
+      <p><input class="w3-input w3-border" type="text" id="name" name="name" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" id="email" name="email" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" id="subject" name="subject" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" id="message" name="message" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+</div>
 
-                <div class="tab-content">
-
-                    <!--Dynamic Tab 1-->
-                    <div id="home" class="tab-pane fade in active">
-                        <h3 style="padding-left: 9px">Floral Candles</h3>
-                        <br><br>
-                        <!--Tab Content-->
-
-                        <div class="row text-center slideanim">
-                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12" style="padding-left: 45px">
-
-
-                                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                                    <img src="Images/Floral Purp 2.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h1>Floral Lavender</h1>
-                                    <p class="price">Rs. 300</p>
-                                    <p>Floral Lavender candle spreads the aroma of lavender for 15 to 18 hours. It's aroma makes you feel as if you are in Lavender fields</p>
-                                    <p><a href="ProductPurchaseForm.jsp"><button>Buy</button></a></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12" style="padding-left: 45px">
-
-                                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                                    <img src="Images/Floral Rose 2.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h1>Floral Rose</h1>
-                                    <p class="price">Rs. 300</p>
-                                    <p>Floral Rose candle spreads the aroma of lavender for 15 to 18 hours. It's aroma makes you feel as if you are in Rose fields</p>
-                                    <p><a href="ProductPurchaseForm.jsp"><button>Buy</button></a></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12" style="padding-left: 45px">
-
-                                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                                    <img src="Images/Floral Strawberry 2.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h1>Floral Vanilla</h1>
-                                    <p class="price">Rs. 300</p>
-                                    <p>Floral Strawberry candle spreads the aroma of lavender for 15 to 18 hours. It's aroma makes you feel as if you are in Strawberry fields</p>
-                                    <p><a href="ProductPurchaseForm.jsp"><button>Buy</button></a></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12" style="padding-left: 45px; padding-right: 29px">
-
-                                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                                    <img src="Images/Floral Vanilla 2.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h1>Floral Strawberry</h1>
-                                    <p class="price">Rs. 300</p>
-                                    <p>Floral Vanilla candle spreads the aroma of lavender for 15 to 18 hours. It's aroma makes you feel as if you are in Vanilla fields</p>
-                                    <p><a href="ProductPurchaseForm.jsp"><button>Buy</button></a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!--Dynamic Tab 2-->
-                    <div id="menu1" class="tab-pane fade">
-                        <h3>Other Premium Products</h3>
-
-
-                      <div class="row text-center slideanim">
-
-		<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12"
-			style="padding-left: 45px; margin-left: -15px" >
-
-			<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-				<img src="Images/GlassCandle.jpg" alt="Denim Jeans"
-					style="width: 100%">
-				<h1>Glass Candle</h1>
-				<p class="price">Rs. 300</p>
-				<p>Glass Candle is also among our best selling products due to
-					its fragrance which is very natural.</p>
-				<p>
-					<a href="ProductPurchaseForm.jsp"><button>Buy</button></a>
-				</p>
-			</div>
-		</div>
-
-		<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12"
-			style="padding-left: 45px">
-
-			<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-				<img src="Images/Img 1.jpg" alt="Denim Jeans"
-					style="width: 100%">
-				<h1>Aroma Product</h1>
-				<p class="price">Rs. 300</p>
-				<p>Floral Rose is also among our best selling products due to
-					its fragrance which is very natural.</p>
-				<p>
-					<a href="ProductPurchaseForm.jsp"><button>Buy</button></a>
-				</p>
-			</div>
-		</div>
-		<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12"
-			style="padding-left: 45px">
-
-			<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-				<img src="Images/Img 2.jpg" alt="Denim Jeans"
-					style="width: 100%">
-				<h1>Floral Vanilla</h1>
-				<p class="price">Rs. 300</p>
-				<p>Floral Vanilla unlike other fragrances too is a special one
-					owing to its aroma. It's smell is intriguing</p>
-				<p>
-					<a href="ProductPurchaseForm.jsp"><button>Buy</button></a>
-				</p>
-			</div>
-		</div>
-		<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12"
-			style="padding-left: 45px">
-
-			<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-				<img src="Images/Lavender.png" alt="Denim Jeans"
-					style="width: 100%">
-				<h1>Floral Strawberry</h1>
-				<p class="price">Rs. 300</p>
-				<p>Floral Strawberry candle when lit smells as if you are in a
-					Strawberry garden. Its as natural as a strawberry</p>
-				<p>
-					<a href="ProductPurchaseForm.jsp"><button>Buy</button></a>
-				</p>
-			</div>
-		</div>
-	</div>
-
-                    <!--Dynamic Tab 3-->
-                    <div id="menu2" class="tab-pane fade">
-                        <h3>Reed Diffusers</h3>
-
-                        <!--Tab Content-->
-
-                        <div class="row text-center slideanim">
-                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-
-
-                                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                                    <img src="Images/Floral Purp 2.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h1>Floral Lavender</h1>
-                                    <p class="price">$19.99</p>
-                                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-                                    <p><a href="ProductPurchaseForm.jsp"><button>Buy</button></a></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-
-                                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                                    <img src="Images/Floral Rose 2.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h1>Floral Lavender</h1>
-                                    <p class="price">$19.99</p>
-                                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-                                    <p><a href="ProductPurchaseForm.jsp"><button>Buy</button></a></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-
-                                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                                    <img src="Images/Floral Strawberry 2.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h1>Floral Lavender</h1>
-                                    <p class="price">$19.99</p>
-                                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-                                    <p><a href="ProductPurchaseForm.jsp"><button>Buy</button></a></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-
-                                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                                    <img src="Images/Floral Vanilla 2.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h1>Floral Lavender</h1>
-                                    <p class="price">$19.99</p>
-                                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-                                    <p><a href="ProductPurchaseForm.jsp"><button>Buy</button></a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Dynamic Tab 4-->
-                    <div id="menu3" class="tab-pane fade">
-                        <h3>Buddha Sets</h3>
-
-                        <!--Tab Content-->
-
-                        <div class="row text-center slideanim">
-                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 
 
-                                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                                    <img src="Images/Floral Purp 2.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h1>Floral Lavender</h1>
-                                    <p class="price">$19.99</p>
-                                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-                                    <p><a href="ProductPurchaseForm.jsp"><button>Buy</button></a></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
 
-                                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                                    <img src="Images/Floral Rose 2.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h1>Floral Lavender</h1>
-                                    <p class="price">$19.99</p>
-                                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-                                    <p><a href="ProductPurchaseForm.jsp"><button>Buy</button></a></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
 
-                                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                                    <img src="Images/Floral Strawberry 2.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h1>Floral Lavender</h1>
-                                    <p class="price">$19.99</p>
-                                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-                                    <p><a href="ProductPurchaseForm.jsp"><button>Buy</button></a></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
 
-                                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                                    <img src="Images/Floral Vanilla 2.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h1>Floral Lavender</h1>
-                                    <p class="price">$19.99</p>
-                                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-                                    <p><a href="ProductPurchaseForm.jsp"><button>Buy</button></a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                     <br>
-                      <br> 
-                      <br>
-
-                    <h2>What our customers say</h2>
-                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <h4>"This company is the best in Home Decor. They know what Corporates love"<br><span>Bayer, Pharmaceutics company</span></h4>
-                            </div>
-                            <div class="item">
-                                <h4>"One word... SUPER!!"<br><span>Wockhardt, Pharmaceutical company</span></h4>
-                            </div>
-                            <div class="item">
-                                <h4>"One of the finest in Gifting companies"<br><span>IDEA</span></h4>
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-
-                
-                <br><br><br><br><br>
-
-<hr>
-
-
-
-                        <footer class="container-fluid text-center">
-                            <a href="#myPage" title="To Top">
-                                <span class="glyphicon glyphicon-chevron-up"></span>
-                            </a>
-                            <p>Posted by: Shashankk Shekar Chaturvedi</p>
-  <p>Contact information: <a href="liveinbliss21@gmail.com">liveinbliss21@gmail.com</a></p>
-
-<p><strong>Note:</strong> The footer tag is not supported in Internet Explorer 8 and earlier versions.</p>
-                        </footer>
-
-                        <script>
-                            $(document).ready(function () {
-                                // Add smooth scrolling to all links in navbar + footer link
-                                $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-                                    // Make sure this.hash has a value before overriding default behavior
-                                    if (this.hash !== "") {
-                                        // Prevent default anchor click behavior
-                                        event.preventDefault();
-
-                                        // Store hash
-                                        var hash = this.hash;
-
-                                        // Using jQuery's animate() method to add smooth page scroll
-                                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                                        $('html, body').animate({
-                                            scrollTop: $(hash).offset().top
-                                        }, 900, function () {
-
-                                            // Add hash (#) to URL when done scrolling (default click behavior)
-                                            window.location.hash = hash;
-                                        });
-                                    } // End if
-                                });
-
-                                $(window).scroll(function () {
-                                    $(".slideanim").each(function () {
-                                        var pos = $(this).offset().top;
-
-                                        var winTop = $(window).scrollTop();
-                                        if (pos < winTop + 600) {
-                                            $(this).addClass("slide");
-                                        }
-                                    });
-                                });
-                            })
-                        </script>
-
-                        </body>
-                        </html>
+</body>
+</html>
