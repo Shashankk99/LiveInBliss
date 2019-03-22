@@ -6,6 +6,16 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script>
+window.onload = function() {
+	 alert("Success!!!!! Message sent successfully. Please check your email for more details.");
+	}
+</script>
+
+
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -119,43 +129,6 @@ video {
 
 
 
-#snackbar {
-  visibility: hidden;
-  min-width: px;
-  margin-left: -185px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 2px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 30px;
-  font-size: 17px;
-}
-
-#snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-@-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;} 
-  to {bottom: 30px; opacity: 1;}
-}
-
-@keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;} 
-  to {bottom: 0; opacity: 0;}
-}
-
 
 
 
@@ -164,7 +137,11 @@ video {
 
 
 
+
+
 <body>
+
+
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -257,7 +234,7 @@ video {
       <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="Images/ASGS.jpg" alt="Buildings" width="700" height="394">
+      <img class="w3-image w3-round-large" src="Images/Img 1.jpg" alt="Buildings" width="700" height="394">
     </div>
   </div>
 </div>
@@ -374,31 +351,31 @@ Tip: Try to remove the background-attachment property to remove the scrolling ef
 
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
-      <img src="Images/ABS.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Aroma Diffuser Spa Set (Set of 3). Available in Rose, Lemongrass, and Sandalwood. MRP Rs. 300/-">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
     </div>
     <div class="w3-col l3 m6">
-      <img src="Images/Img 1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Aroma Diffuser Spa Set (Rose). MRP Rs. 100/-">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
     </div>
     <div class="w3-col l3 m6">
-      <img src="Images/GlassCandle.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Glass Candle (Multi-fragranced candles). MRP Rs. 90/-">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
     </div>
     <div class="w3-col l3 m6">
-      <img src="Images/GiftSet1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Live in Bliss Gift Set (Multi-fragranced). MRP Rs. 450/-">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
     </div>
   </div>
 
   <div class="w3-row-padding w3-section">
     <div class="w3-col l3 m6">
-      <img src="Images/Floral Purp 2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Floral Lavender Candle Set. MRP Rs. 140/-">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
     </div>
     <div class="w3-col l3 m6">
-      <img src="Images/Floral Rose 2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Floral Rose Candle Set. MRP Rs. 140/-">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
     </div>
     <div class="w3-col l3 m6">
-      <img src="Images/Floral Strawberry 2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Floral Strawberry Candle Set. MRP Rs. 140/-">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
     </div>
     <div class="w3-col l3 m6">
-      <img src="Images/Floral Vanilla 2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Floral Vanilla Candle Set. MRP Rs. 140/-">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
     </div>
   </div>
 </div>
@@ -515,7 +492,6 @@ Tip: Try to remove the background-attachment property to remove the scrolling ef
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
         
-        <div id="snackbar">Loading.....Check your mail for more information</div>
         
         <div id="overlay" onclick="off()">
   <div id="text"><img alt="" src="Images/loading_gear.gif" style= "speak: Loading, Please wait; size: 32%"></div>
@@ -591,5 +567,3 @@ function myFunction() {
 
 </body>
 </html>
-
-
