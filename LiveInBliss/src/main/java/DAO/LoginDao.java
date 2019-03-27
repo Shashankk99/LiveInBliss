@@ -17,7 +17,7 @@ public class LoginDao
   public LoginDao() {}
   
   public boolean check(String uname, String user_password) {
-    try { Class.forName("com.mysql.jdbc.Driver");
+    try { Class.forName("com.mysql.cj.jdbc.Driver");
       Connection con = DriverManager.getConnection(url, username, password);
       System.out.println("Connected");
       PreparedStatement st = con.prepareStatement(sql);

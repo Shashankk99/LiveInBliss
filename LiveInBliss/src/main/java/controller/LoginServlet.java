@@ -42,7 +42,7 @@ public class LoginServlet
       response.sendRedirect("Success.jsp");
     }
     else {
-      response.sendRedirect("Login.jsp");
+      response.sendRedirect("LoginError.jsp");
     }
   }
 }

@@ -173,6 +173,7 @@ video {
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="Products.jsp" class="w3-bar-item w3-button">PRODUCTS</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
       <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
@@ -199,7 +200,7 @@ video {
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-opacity-max" id="home">
+<header class="bgimg-1 w3-display-container w3-opacity-max w3-" id="home">
 <video autoplay muted loop>
   <source src="Images/Introduction.mp4" type="video/mp4">
   <source src="Images/Introduction.ogg" type="video/ogg">

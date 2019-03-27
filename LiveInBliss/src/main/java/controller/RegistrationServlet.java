@@ -6,7 +6,10 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.Properties;
 import javax.mail.Message.RecipientType;
 import javax.mail.MessagingException;
@@ -27,11 +30,23 @@ import email.Test;
 @WebServlet({"/RegistrationServlet"})
 public class RegistrationServlet extends HttpServlet
 {
+	
+	
+	Statement st = null;
+	
+	
+	
+	boolean flag;
+	
+	
+	
   private static final long serialVersionUID = 1L;
   
   public RegistrationServlet() {}
   
   UserData ud = new UserData();
+  
+  String email99 = ud.getEmail();
   
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException
@@ -41,9 +56,6 @@ public class RegistrationServlet extends HttpServlet
     throws ServletException, IOException
   {
     PrintWriter out = response.getWriter();
-    
-   
-    
     
     
     ud.setFirst_name(request.getParameter("f1"));
@@ -57,41 +69,108 @@ public class RegistrationServlet extends HttpServlet
     
 
     if (ud.getConfirm_password().equals(ud.getPassword())) {
-      
     	
-    	writeData();
     	
-    	System.out.println("writeData() method completed");
     	
-    	Test t=new Test(ud.getEmail(), "Live In Bliss", "Welcome to Live In Bliss!!! We are happy that you have become a member of Live In Bliss. You will get customized offers from us during festive seasons. So get ready for some exciting deals only from Live In Bliss-Aromatize your Atmosphere");
     	
-    	System.out.println("Sending email to:- "+ud.getEmail());
-    	
-    	try 
-        {
-            t.sendEmail();
-            System.out.println("Mail Sent successfully");
-        } 
-    	
-        catch (Exception ex) 
-        {
-            out.println(ex.getMessage());
-        }
-    	
+    	try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		  
+		  Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/liveinbliss?autoReconnect=true&useSSL=FALSE", "root", "Mohini24");
+	      
 
-     
-      HttpSession session = request.getSession();
-      session.setAttribute("username", ud.getUname());
-      response.sendRedirect("Success.jsp");
-      
-      
+	      
+	      st = con.createStatement();
+	      
+	       String query1 = "select email from users";
+	     
+	       
+	       ResultSet rs = st.executeQuery(query1);
+	       
+	       while(rs.next()) {
+	       
+	       String ename = rs.getString("email");
+	      
+	    	System.out.println("DB Email IDs:- "+ename);
+	    	
+	    	if(ename.equals(ud.getEmail())) {
+	    		
+	    		flag=false;
+	    		response.sendRedirect("RegisterError.jsp");
+	    	}
+	    	else {
+	    		
+	    		flag=true;
+	    		writeData();
+	    		
+	    	
+	    		
+	    	}
+	    	
+	    	
+	    	
+	    	  
+	       }
+	       
+	       if(flag==true) {
+	       	
+	       	
+	       	System.out.println("writeData() method completed");
+	       	
+	       	Test t=new Test(ud.getEmail(), "Live In Bliss", "Welcome to Live In Bliss!!! We are happy that you have become a member of Live In Bliss. You will get customized offers from us during festive seasons. So get ready for some exciting deals only from Live In Bliss-Aromatize your Atmosphere");
+	       	
+	       	System.out.println("Sending email to:- "+ud.getEmail());
+	       	
+	       	try 
+	           {
+	               t.sendEmail();
+	               System.out.println("Mail Sent successfully");
+	           } 
+	       	
+	           catch (Exception ex) 
+	           {
+	               out.println(ex.getMessage());
+	           }
+	       	
+
+	        
+	         HttpSession session = request.getSession();
+	         session.setAttribute("username", ud.getUname());
+	         response.sendRedirect("Success.jsp");
+	         
+	         
+	       }
+	    	  
+	    	  
+	    	  
+	       con.close();
+	  		  
+	    	rs.close();
+	    	
+	      
+	      
+	      
+	      
+
+	  } catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println(e.getMessage());
+		}
+    	
+    	
+    	
+    	
+    	
     }
     
     
-    else {
-  	  response.sendRedirect("Register.jsp");
-    }
+    
   }
+  
+  
+  
+  
   
   
   public void writeData() {

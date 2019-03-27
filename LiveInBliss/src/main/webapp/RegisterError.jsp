@@ -54,6 +54,33 @@
                 background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
                 background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
             }
+            
+            
+            
+            
+ #snackbar {
+  visibility: hidden;
+  min-width: px;
+  margin-left: -245px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 60px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
+}
+
+            
 
         </style>
 
@@ -73,8 +100,10 @@
 
     </head>
 
-    <body class="text-center" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <body class="text-center" data-spy="scroll" data-target=".navbar" data-offset="60" onload="myFunction()">
 
+
+<div id="snackbar">Error!!!!! Email ID already exists. Please enter a different Email ID</div>
 
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -194,6 +223,17 @@
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
         </div>
+        
+        
+        
+        
+        <script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 9000);
+}
+</script>
         
     </body>
 </html>
